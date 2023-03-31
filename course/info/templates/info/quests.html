@@ -1,0 +1,36 @@
+{% extends 'info/entry_table.html' %}
+
+{% block table_content %}
+
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Crisis</th>
+    <th>Target number</th>
+    <th>Items</th>
+</tr>
+</thead>
+
+<tbody>
+    {% for quest in quests %}
+    <tr>
+        <td style="position: relative;">
+            <a href="{{ quest.get_absolute_url }}" class="stretched-link"></a>{{quest.entry}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ spell.get_absolute_url }}" class="stretched-link"></a>{{quest.crisis}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ quest.get_absolute_url }}" class="stretched-link"></a>{{quest.target_number}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ quest.get_absolute_url }}" class="stretched-link"></a>{{quest.items}}
+        </td>
+    </tr>
+    {% endfor %}
+
+    <a href="{% url 'info:quests_xlsx' %}" type="button" class="btn btn-light mt-4 mb-4">Выгрузить в xlsx</a>
+
+</tbody>
+
+{% endblock %}

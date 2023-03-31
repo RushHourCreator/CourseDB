@@ -1,0 +1,28 @@
+{% extends 'info/entry_table.html' %}
+
+{% block table_content %}
+
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Effect</th>
+</tr>
+</thead>
+
+<tbody>
+    {% for spell in spells %}
+    <tr>
+        <td style="position: relative;">
+            <a href="{{ spell.get_absolute_url }}" class="stretched-link"></a>{{spell.entry}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ spell.get_absolute_url }}" class="stretched-link"></a>{{spell.effect}}
+        </td>
+    </tr>
+    {% endfor %}
+
+    <a href="{% url 'info:spells_xlsx' %}" type="button" class="btn btn-light mt-4 mb-4">Выгрузить в xlsx</a>
+
+    </tbody>
+
+{% endblock %}

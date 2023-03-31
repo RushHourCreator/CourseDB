@@ -1,0 +1,51 @@
+Metadata-Version: 2.0
+Name: sender
+Version: 0.3
+Summary: Python SMTP Client for Humans
+Home-page: https://github.com/fengsp/sender
+Author: Shipeng Feng
+Author-email: fsp261@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+
+Sender
+------
+
+Sender is easy
+``````````````
+
+.. code:: python
+
+    from sender import Mail
+
+    mail = Mail()
+
+    mail.send_message("Hello", fromaddr="from@example.com",
+                      to="to@example.com", body="Hello world!")
+
+Install
+```````
+
+.. code:: bash
+
+    $ pip install sender
+
+Links
+`````
+
+* `documentation <http://sender.readthedocs.org/>`_
+* `github <https://github.com/fengsp/sender>`_
+* `development version
+  <http://github.com/fengsp/sender/zipball/master#egg=sender-dev>`_
+
+
+

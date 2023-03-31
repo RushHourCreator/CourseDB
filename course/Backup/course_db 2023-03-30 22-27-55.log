@@ -1,0 +1,187 @@
+pg_dump: последний системный OID: 16383
+pg_dump: чтение расширений
+pg_dump: выявление членов расширений
+pg_dump: чтение схем
+pg_dump: чтение пользовательских таблиц
+pg_dump: чтение пользовательских функций
+pg_dump: чтение пользовательских типов
+pg_dump: чтение процедурных языков
+pg_dump: чтение пользовательских агрегатных функций
+pg_dump: чтение пользовательских операторов
+pg_dump: чтение пользовательских методов доступа
+pg_dump: чтение пользовательских классов операторов
+pg_dump: чтение пользовательских семейств операторов
+pg_dump: чтение пользовательских анализаторов текстового поиска
+pg_dump: чтение пользовательских шаблонов текстового поиска
+pg_dump: чтение пользовательских словарей текстового поиска
+pg_dump: чтение пользовательских конфигураций текстового поиска
+pg_dump: чтение пользовательских оболочек сторонних данных
+pg_dump: чтение пользовательских сторонних серверов
+pg_dump: чтение прав по умолчанию
+pg_dump: чтение пользовательских правил сортировки
+pg_dump: чтение пользовательских преобразований
+pg_dump: чтение приведений типов
+pg_dump: чтение преобразований
+pg_dump: чтение информации о наследовании таблиц
+pg_dump: чтение событийных триггеров
+pg_dump: поиск таблиц расширений
+pg_dump: поиск связей наследования
+pg_dump: чтение информации о столбцах интересующих таблиц
+pg_dump: поиск ограничений-проверок для таблиц
+pg_dump: пометка наследованных столбцов в подтаблицах
+pg_dump: чтение индексов
+pg_dump: пометка индексов в секционированных таблицах
+pg_dump: чтение расширенной статистики
+pg_dump: чтение ограничений
+pg_dump: чтение триггеров
+pg_dump: чтение правил перезаписи
+pg_dump: чтение политик
+pg_dump: чтение политик защиты на уровне строк
+pg_dump: чтение публикаций
+pg_dump: чтение информации о таблицах, включённых в публикации
+pg_dump: чтение информации о схемах, включённых в публикации
+pg_dump: чтение подписок
+pg_dump: чтение больших объектов
+pg_dump: чтение информации о зависимостях
+pg_dump: сохранение кодировки (UTF8)
+pg_dump: сохранение standard_conforming_strings (on)
+pg_dump: сохранение search_path = 
+pg_dump: создаётся TABLE "public.auth_group"
+pg_dump: создаётся SEQUENCE "public.auth_group_id_seq"
+pg_dump: создаётся TABLE "public.auth_group_permissions"
+pg_dump: создаётся SEQUENCE "public.auth_group_permissions_id_seq"
+pg_dump: создаётся TABLE "public.auth_permission"
+pg_dump: создаётся SEQUENCE "public.auth_permission_id_seq"
+pg_dump: создаётся TABLE "public.auth_user"
+pg_dump: создаётся TABLE "public.auth_user_groups"
+pg_dump: создаётся SEQUENCE "public.auth_user_groups_id_seq"
+pg_dump: создаётся SEQUENCE "public.auth_user_id_seq"
+pg_dump: создаётся TABLE "public.auth_user_user_permissions"
+pg_dump: создаётся SEQUENCE "public.auth_user_user_permissions_id_seq"
+pg_dump: создаётся TABLE "public.django_admin_log"
+pg_dump: создаётся SEQUENCE "public.django_admin_log_id_seq"
+pg_dump: создаётся TABLE "public.django_content_type"
+pg_dump: создаётся SEQUENCE "public.django_content_type_id_seq"
+pg_dump: создаётся TABLE "public.django_migrations"
+pg_dump: создаётся SEQUENCE "public.django_migrations_id_seq"
+pg_dump: создаётся TABLE "public.django_session"
+pg_dump: создаётся TABLE "public.info_characters"
+pg_dump: создаётся TABLE "public.info_entries"
+pg_dump: создаётся SEQUENCE "public.info_entries_id_seq"
+pg_dump: создаётся TABLE "public.info_forumusers"
+pg_dump: создаётся SEQUENCE "public.info_forumusers_id_seq"
+pg_dump: создаётся TABLE "public.info_items"
+pg_dump: создаётся TABLE "public.info_locations"
+pg_dump: создаётся TABLE "public.info_quests"
+pg_dump: создаётся TABLE "public.info_quests_items"
+pg_dump: создаётся SEQUENCE "public.info_quests_items_id_seq"
+pg_dump: создаётся TABLE "public.info_spells"
+pg_dump: обрабатываются данные таблицы "public.auth_group"
+pg_dump: выгрузка содержимого таблицы "public.auth_group"
+pg_dump: обрабатываются данные таблицы "public.auth_group_permissions"
+pg_dump: выгрузка содержимого таблицы "public.auth_group_permissions"
+pg_dump: обрабатываются данные таблицы "public.auth_permission"
+pg_dump: выгрузка содержимого таблицы "public.auth_permission"
+pg_dump: обрабатываются данные таблицы "public.auth_user"
+pg_dump: выгрузка содержимого таблицы "public.auth_user"
+pg_dump: обрабатываются данные таблицы "public.auth_user_groups"
+pg_dump: выгрузка содержимого таблицы "public.auth_user_groups"
+pg_dump: обрабатываются данные таблицы "public.auth_user_user_permissions"
+pg_dump: выгрузка содержимого таблицы "public.auth_user_user_permissions"
+pg_dump: обрабатываются данные таблицы "public.django_admin_log"
+pg_dump: выгрузка содержимого таблицы "public.django_admin_log"
+pg_dump: обрабатываются данные таблицы "public.django_content_type"
+pg_dump: выгрузка содержимого таблицы "public.django_content_type"
+pg_dump: обрабатываются данные таблицы "public.django_migrations"
+pg_dump: выгрузка содержимого таблицы "public.django_migrations"
+pg_dump: обрабатываются данные таблицы "public.django_session"
+pg_dump: выгрузка содержимого таблицы "public.django_session"
+pg_dump: обрабатываются данные таблицы "public.info_characters"
+pg_dump: выгрузка содержимого таблицы "public.info_characters"
+pg_dump: обрабатываются данные таблицы "public.info_entries"
+pg_dump: выгрузка содержимого таблицы "public.info_entries"
+pg_dump: обрабатываются данные таблицы "public.info_forumusers"
+pg_dump: выгрузка содержимого таблицы "public.info_forumusers"
+pg_dump: обрабатываются данные таблицы "public.info_items"
+pg_dump: выгрузка содержимого таблицы "public.info_items"
+pg_dump: обрабатываются данные таблицы "public.info_locations"
+pg_dump: выгрузка содержимого таблицы "public.info_locations"
+pg_dump: обрабатываются данные таблицы "public.info_quests"
+pg_dump: выгрузка содержимого таблицы "public.info_quests"
+pg_dump: обрабатываются данные таблицы "public.info_quests_items"
+pg_dump: выгрузка содержимого таблицы "public.info_quests_items"
+pg_dump: обрабатываются данные таблицы "public.info_spells"
+pg_dump: выгрузка содержимого таблицы "public.info_spells"
+pg_dump: выполняется SEQUENCE SET auth_group_id_seq
+pg_dump: выполняется SEQUENCE SET auth_group_permissions_id_seq
+pg_dump: выполняется SEQUENCE SET auth_permission_id_seq
+pg_dump: выполняется SEQUENCE SET auth_user_groups_id_seq
+pg_dump: выполняется SEQUENCE SET auth_user_id_seq
+pg_dump: выполняется SEQUENCE SET auth_user_user_permissions_id_seq
+pg_dump: выполняется SEQUENCE SET django_admin_log_id_seq
+pg_dump: выполняется SEQUENCE SET django_content_type_id_seq
+pg_dump: выполняется SEQUENCE SET django_migrations_id_seq
+pg_dump: выполняется SEQUENCE SET info_entries_id_seq
+pg_dump: выполняется SEQUENCE SET info_forumusers_id_seq
+pg_dump: выполняется SEQUENCE SET info_quests_items_id_seq
+pg_dump: создаётся CONSTRAINT "public.auth_group auth_group_name_key"
+pg_dump: создаётся CONSTRAINT "public.auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq"
+pg_dump: создаётся CONSTRAINT "public.auth_group_permissions auth_group_permissions_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_group auth_group_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_permission auth_permission_content_type_id_codename_01ab375a_uniq"
+pg_dump: создаётся CONSTRAINT "public.auth_permission auth_permission_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_user_groups auth_user_groups_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_user_groups auth_user_groups_user_id_group_id_94350c0c_uniq"
+pg_dump: создаётся CONSTRAINT "public.auth_user auth_user_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_user_user_permissions auth_user_user_permissions_pkey"
+pg_dump: создаётся CONSTRAINT "public.auth_user_user_permissions auth_user_user_permissions_user_id_permission_id_14a6b632_uniq"
+pg_dump: создаётся CONSTRAINT "public.auth_user auth_user_username_key"
+pg_dump: создаётся CONSTRAINT "public.django_admin_log django_admin_log_pkey"
+pg_dump: создаётся CONSTRAINT "public.django_content_type django_content_type_app_label_model_76bd3d3b_uniq"
+pg_dump: создаётся CONSTRAINT "public.django_content_type django_content_type_pkey"
+pg_dump: создаётся CONSTRAINT "public.django_migrations django_migrations_pkey"
+pg_dump: создаётся CONSTRAINT "public.django_session django_session_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_characters info_characters_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_entries info_entries_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_entries info_entries_slug_key"
+pg_dump: создаётся CONSTRAINT "public.info_forumusers info_forumusers_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_forumusers info_forumusers_user_id_key"
+pg_dump: создаётся CONSTRAINT "public.info_items info_items_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_locations info_locations_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_quests_items info_quests_items_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_quests_items info_quests_items_quests_id_items_id_81e55839_uniq"
+pg_dump: создаётся CONSTRAINT "public.info_quests info_quests_pkey"
+pg_dump: создаётся CONSTRAINT "public.info_spells info_spells_pkey"
+pg_dump: создаётся INDEX "public.auth_group_name_a6ea08ec_like"
+pg_dump: создаётся INDEX "public.auth_group_permissions_group_id_b120cbf9"
+pg_dump: создаётся INDEX "public.auth_group_permissions_permission_id_84c5c92e"
+pg_dump: создаётся INDEX "public.auth_permission_content_type_id_2f476e4b"
+pg_dump: создаётся INDEX "public.auth_user_groups_group_id_97559544"
+pg_dump: создаётся INDEX "public.auth_user_groups_user_id_6a12ed8b"
+pg_dump: создаётся INDEX "public.auth_user_user_permissions_permission_id_1fbb5f2c"
+pg_dump: создаётся INDEX "public.auth_user_user_permissions_user_id_a95ead1b"
+pg_dump: создаётся INDEX "public.auth_user_username_6821ab7c_like"
+pg_dump: создаётся INDEX "public.django_admin_log_content_type_id_c4bce8eb"
+pg_dump: создаётся INDEX "public.django_admin_log_user_id_c564eba6"
+pg_dump: создаётся INDEX "public.django_session_expire_date_a5c62663"
+pg_dump: создаётся INDEX "public.django_session_session_key_c0390e0f_like"
+pg_dump: создаётся INDEX "public.info_entries_slug_b2d210d9_like"
+pg_dump: создаётся INDEX "public.info_quests_items_items_id_c71ca230"
+pg_dump: создаётся INDEX "public.info_quests_items_quests_id_e2d0838d"
+pg_dump: создаётся FK CONSTRAINT "public.auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm"
+pg_dump: создаётся FK CONSTRAINT "public.auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id"
+pg_dump: создаётся FK CONSTRAINT "public.auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co"
+pg_dump: создаётся FK CONSTRAINT "public.auth_user_groups auth_user_groups_group_id_97559544_fk_auth_group_id"
+pg_dump: создаётся FK CONSTRAINT "public.auth_user_groups auth_user_groups_user_id_6a12ed8b_fk_auth_user_id"
+pg_dump: создаётся FK CONSTRAINT "public.auth_user_user_permissions auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm"
+pg_dump: создаётся FK CONSTRAINT "public.auth_user_user_permissions auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id"
+pg_dump: создаётся FK CONSTRAINT "public.django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co"
+pg_dump: создаётся FK CONSTRAINT "public.django_admin_log django_admin_log_user_id_c564eba6_fk_auth_user_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_characters info_characters_entry_id_a64ccc7a_fk_info_entries_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_forumusers info_forumusers_user_id_81eddf5c_fk_auth_user_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_items info_items_entry_id_e30e5d0f_fk_info_entries_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_locations info_locations_entry_id_433120a4_fk_info_entries_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_quests info_quests_entry_id_364fd78e_fk_info_entries_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_quests_items info_quests_items_items_id_c71ca230_fk_info_items_entry_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_quests_items info_quests_items_quests_id_e2d0838d_fk_info_quests_entry_id"
+pg_dump: создаётся FK CONSTRAINT "public.info_spells info_spells_entry_id_04702269_fk_info_entries_id"

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-archive
+Version: 0.2.0
+Summary: Management command for creating compressed archives of DB tables and uploaded media
+Home-page: https://github.com/nathan-osman/django-archive
+Author: Nathan Osman
+Author-email: nathan@quickmediasolutions.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Requires-Dist: Django (>=3.0)
+
+UNKNOWN
+
+

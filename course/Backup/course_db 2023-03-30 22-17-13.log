@@ -1,0 +1,1 @@
+pg_dump: ошибка: подключиться к серверу "localhost" (::1), порту 5432 не удалось: fe_sendauth: no password supplied

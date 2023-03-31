@@ -1,0 +1,19 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+<br>
+<h1>{{ title }}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    
+    {% for f in form %}
+    <div class="mb-3">
+        <div><label for="{{ f.id_for_label }}" class="form-label">{{ f.label }}:</label></div>{{ f }}
+        <div class="form-error">{{ f.errors }}</div>
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">Регистрация</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="card card-body">
+    <div class="row">
+        <div class="col border-bottom">
+            <h1>{{ quest.entry.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border-bottom">
+            <br>
+            Crisis: {{ quest.crisis }}
+            <br>
+            Target number: {{ quest.target_number }}
+            <br>
+            Reward items: {{ quest.items }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container">
+                {{ quest.entry.content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

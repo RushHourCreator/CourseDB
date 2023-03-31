@@ -1,0 +1,38 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="card card-body">
+    <div class="row">
+        <div class="col border-bottom">
+            <h1>{{ character.entry.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border-bottom">
+            <br>
+            Strength: {{ character.strength }}
+            <br>
+            Will: {{ character.will }}
+            <br>
+            Influence: {{ character.influence }}
+            <br>
+            Observation: {{ character.observation }}
+            <br>
+            Lore: {{ character.lore }}
+            <br>
+            Loyalty: {{ character.loyalty }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container">
+                {{ character.entry.content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

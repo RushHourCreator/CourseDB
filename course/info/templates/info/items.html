@@ -1,0 +1,28 @@
+{% extends 'info/entry_table.html' %}
+
+{% block table_content %}
+
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Effect</th>
+</tr>
+</thead>
+
+<tbody>
+    {% for item in items %}
+    <tr>
+        <td style="position: relative;">
+            <a href="{{ item.get_absolute_url }}" class="stretched-link"></a>{{item.entry}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ item.get_absolute_url }}" class="stretched-link"></a>{{item.effect}}
+        </td>
+    </tr>
+    {% endfor %}
+
+    <a href="{% url 'info:items_xlsx' %}" type="button" class="btn btn-light mt-4 mb-4">Выгрузить в xlsx</a>
+
+</tbody>
+
+{% endblock %}

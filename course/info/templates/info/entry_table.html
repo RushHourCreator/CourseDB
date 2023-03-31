@@ -1,0 +1,31 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="row">
+    <div class="col">
+        <div class="card card-body">
+            <form method="get">
+                {{myFilter.form}}
+                <button class="btn btn-primary" type="submit">
+                    Искать
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col">
+        <div class="card card-body">
+            <table class="table table-sm table-hover">
+                {% block table_content %}
+                {% endblock %}
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

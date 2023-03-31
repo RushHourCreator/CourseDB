@@ -1,0 +1,33 @@
+{% extends 'info/entry_table.html' %}
+
+{% block table_content %}
+
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Number</th>
+    <th>Effect</th>
+</tr>
+</thead>
+
+<tbody>
+    {% for location in locations %}
+    <tr>
+        <td style="position: relative;">
+            <a href="{{ location.get_absolute_url }}" class="stretched-link"></a>{{location.entry}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ location.get_absolute_url }}" class="stretched-link"></a>{{location.number}}
+        </td>
+        <td style="position: relative;">
+            <a href="{{ location.get_absolute_url }}" class="stretched-link"></a>{{location.effect}}
+        </td>
+    </tr>
+    {% endfor %}
+
+    <a href="{% url 'info:locations_xlsx' %}" type="button" class="btn btn-light mt-4 mb-4">Выгрузить в xlsx</a>
+
+
+</tbody>
+
+{% endblock %}

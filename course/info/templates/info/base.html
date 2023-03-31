@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'info/css/bootstrap.min.css' %}" rel="stylesheet">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <script src="{% static 'info/js/bootstrap.bundle.min.js' %}"></script>
+
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Меню</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'info:items' %}">Карты предметов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'info:characters' %}">Персонажи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'info:locations' %}">Локации корабля</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'info:quests' %}">Карты мифов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'info:spells' %}">Карты заклинаний</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <a class="navbar-brand" href="{% url 'info:home' %}">UnfathomableDB</a>
+
+            <div class="container-right">
+
+                {% if request.user.is_authenticated %}
+                <h5 style="display: inline;" class="text-light mx-3">{{ user.username }}</h5>
+                <a style="display: inline;" class="btn btn-secondary" href="{% url 'forum:logout' %}" role="button">Выйти</a>
+                {% else %}
+                <a style="display: inline;" class="btn btn-primary mx-2" href="{% url 'forum:login' %}" role="button">Войти</a>
+                <a style="display: inline;" class="btn btn-secondary" href="{% url 'forum:register' %}" role="button">Регистрация</a>
+                {% endif %}
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container">
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+
+</html>

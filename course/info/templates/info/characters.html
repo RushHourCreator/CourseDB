@@ -1,0 +1,49 @@
+{% extends 'info/entry_table.html' %}
+
+{% block table_content %}
+
+<thead>
+<tr>
+    <th>Title</th>
+    <th>Strength</th>
+    <th>Will</th>
+    <th>Influence</th>
+    <th>Observation</th>
+    <th>Lore</th>
+    <th>Loyalty</th>
+</tr>
+</thead>
+
+<tbody>
+{% for character in characters %}
+<tr>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.entry}}
+    </td>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.strength}}
+    </td>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.will}}
+    </td>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.influence}}
+    </td>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.observation}}
+    </td>
+   <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.lore}}
+    </td>
+    <td style="position: relative;">
+        <a href="{{ character.get_absolute_url }}" class="stretched-link"></a>{{character.loyalty}}
+    </td>
+</tr>
+{% endfor %}
+
+
+
+    <a href="{% url 'info:characters_xlsx' %}" type="button" class="btn btn-light mt-4 mb-4">Выгрузить в xlsx</a>
+</tbody>
+
+{% endblock %}

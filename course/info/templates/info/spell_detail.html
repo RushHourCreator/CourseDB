@@ -1,0 +1,28 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="card card-body">
+    <div class="row">
+        <div class="col border-bottom">
+            <h1>{{ spell.entry.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border-bottom">
+            <br>
+            Cost: {{ spell.effect }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="container">
+                {{ spell.entry.content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
